@@ -1,4 +1,4 @@
-<p align="center"> <img src="assets/C PROJECTS!.png.png" alt="Banner do projeto Projetos Acadêmicos em C" width="100%"> </p>
+<p align="center"> <img src="assets/C PROJECTS!.png" alt="Banner do projeto Projetos Acadêmicos em C" width="100%"> </p>
 
 <h1 align="center">Projetos Acadêmicos em C</h1>
 
