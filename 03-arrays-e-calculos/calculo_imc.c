@@ -2,19 +2,20 @@
 
 int main() {
     int opcao;
+    float peso, altura, imc;
 
+    do {
     printf(" ==== CALCULADORA DE IMC! ====\n");
     printf("Olá! Este é um programa para calcular o Índice de Massa Corporal (IMC).\n");
-    printf("Por favor, escolha uma das opções abaixo para iniciar:\n");
     printf("1. Calcular IMC\n");
     printf("2. Sobre o cálculo\n");
     printf("3. Sair\n");
+    printf("Por favor, escolha uma das opções abaixo para iniciar:\n");
     scanf("%d", &opcao);
 
     switch(opcao) {
         case 1:
             printf("Você escolheu calcular o IMC.\n");
-            float peso, altura, imc;
 
             printf("Digite seu peso em kg (ex: 70.5): ");
             scanf("%f", &peso);
@@ -30,7 +31,7 @@ int main() {
                 printf("Classificação: Abaixo do peso.\n");
             } else if (imc >= 18.5 && imc < 24.9) {
                 printf("Classificação: Peso normal.\n");
-            } else if (imc >= 25 && imc < 29.9) {
+            } else if (imc >= 25 && imc < 30) {
                 printf("Classificação: Sobrepeso.\n");
             } else {
                 printf("Classificação: Obesidade.\n");
@@ -44,7 +45,8 @@ int main() {
             break;
         default:
             printf("Opção inválida. Por favor, escolha uma opção válida.\n");
-    }
+        }
+    } while (opcao != 3);
 
     return 0;
 }
